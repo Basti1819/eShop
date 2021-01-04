@@ -1,15 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ViewProductScreen\" />
+    <ProjectReference Include="..\eShop.CoreBussiness\eShop.CoreBussiness.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\eShop.CoreBussiness\eShop.CoreBussiness.csproj" />
+    <Folder Include="ViewProductScreen\" />
   </ItemGroup>
 
 </Project>

@@ -8,4 +8,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\eShop.Web.Modules\eShop.Web.AdminPortal\eShop.Web.AdminPortal.csproj" />
+    <ProjectReference Include="..\eShop.Web.Modules\eShop.Web.Common\eShop.Web.Common.csproj" />
+  </ItemGroup>
+
 </Project>

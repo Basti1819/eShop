@@ -1,6 +1,6 @@
 ﻿@page "/product/{id:int}"
 
-@inject IViewProduct viewProduct;
+@inject IViewProductUseCase viewProductUseCase;
 
 <h3>Product Details</h3>
 
@@ -17,7 +17,7 @@
     </div>
 </div>
 <br />
-<NavLink href="products">Back to Products</NavLink>
+@*<NavLink href="products">Back to Products</NavLink>*@
 
 @code 
 {
@@ -32,6 +32,6 @@
         base.OnParametersSet();
 
         if (Id > 0)
-            product = viewProduct.Execute(Id);
+            product = viewProductUseCase.Execute(Id);
     }
 }

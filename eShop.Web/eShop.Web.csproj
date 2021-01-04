@@ -4,4 +4,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\eShop.CoreBussiness\eShop.CoreBussiness.csproj" />
+    <ProjectReference Include="..\eShop.UseCases\eShop.UseCases.csproj" />
+    <ProjectReference Include="..\eShop.Web.CustomerPortal\eShop.Web.CustomerPortal.csproj" />
+    <ProjectReference Include="..\eShop.Web.Modules\eShop.Web.AdminPortal\eShop.Web.AdminPortal.csproj" />
+    <ProjectReference Include="..\eShop.Web.Modules\eShop.Web.Common\eShop.Web.Common.csproj" />
+    <ProjectReference Include="..\Plugins\eShop.DateStore.HardCoded\eShop.DateStore.HardCoded.csproj" />
+  </ItemGroup>
+
 </Project>

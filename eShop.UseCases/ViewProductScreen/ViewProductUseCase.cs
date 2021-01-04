@@ -4,17 +4,18 @@ using System.Collections.Generic;
 
 namespace eShop.UseCases.SearchProductScreen
 {
-    public class SearchProduct : ISearchProduct
+    public class ViewProductUseCase : IViewProductUseCase
     {
         private readonly IProductRepository productRepository;
 
-        public SearchProduct(IProductRepository productRepository)
+        public ViewProductUseCase(IProductRepository productRepository)
         {
             this.productRepository = productRepository;
         }
-        public IEnumerable<Product> Execute(string filter = null)
+        public Product Execute(int id)
         {
-            return productRepository.GetProducts(filter);
+            return productRepository.GetProduct(id);
         }
+
     }
 }
